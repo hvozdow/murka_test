@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DT: 2015-11-27
+  ProductID: 1
+  Rate: 1.5
+
+two:
+  DT: 2015-11-27
+  ProductID: 1
+  Rate: 1.5

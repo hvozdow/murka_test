@@ -1,0 +1,15 @@
+<h1>Showing  Sales</h1>
+<p>
+DT: <%= @sale.DT %>
+</p>
+<p>
+ProductID: <%= @sale.ProductID %>
+</p>
+<p>
+Price: <%= @sale.Price %>
+</p>
+<p>
+Quantity: <%= @sale.Quantity %>
+</p>
+<%= link_to "Edit this sale", edit_sale_path(@sale) %> |
+<%= link_to "Back to sale listing", sales_path %>

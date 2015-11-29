@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Post page</title>
+  </head>
+  <body>
+    <p>Hello, It is my first post!</p>
+  </body>
+</html>
+<%= link_to 'About', new_rate_path %>
+
+
+
+<p>
+    <%= @rate %>
+</p>
+    <%= @rate_new %>
+<form method="get" >
+  <input @ReportStart="@ReportStart" type="text"/>
+  <br>
+  <input type="submit" value="@ReportStart"/>
+</form>
+  <%= @ReportStart %>

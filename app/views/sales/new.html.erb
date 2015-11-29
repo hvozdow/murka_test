@@ -1,0 +1,23 @@
+<h1>Create new </h1>
+<%= form_for @sale do |f| %>
+<p>
+<%= f.label :DT %><br/>
+<%= f.text_field :DT %>
+</p>
+<p>
+<%= f.label :ProductID %><br/>
+<%= f.text_field :ProductID %>
+</p>
+<p>
+<%= f.label :Price %><br/>
+<%= f.text_field :Price %>
+</p>
+<p>
+<%= f.label :Quantity %><br/>
+<%= f.text_field :Quantity %>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<% end %>
+<%= link_to "Back to sales listing", sales_path %>

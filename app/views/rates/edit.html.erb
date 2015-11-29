@@ -1,0 +1,19 @@
+<h1>Edit Rates</h1>
+<%= form_for @rate do |f| %>
+<p>
+<%= f.label :DT %><br/>
+<%= f.text_field :DT %>
+</p>
+<p>
+<%= f.label :ProductID %><br/>
+<%= f.text_area :ProductID %>
+</p>
+<p>
+<%= f.label :Rate %><br/>
+<%= f.text_area :Rate %>
+</p>
+<p>
+<%= f.submit %>
+</p>
+<% end %>
+<%= link_to "Back to rates listing", rates_path %>

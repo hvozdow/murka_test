@@ -1,0 +1,28 @@
+
+<h1>Listing  Sales</h1>
+<p>
+<%= link_to "Create new sale", new_sale_path %>
+</p>
+<table>
+    <tr>
+        <th>DT</th>
+        <th>ProductID</th>
+        <th>Price</th>
+        <th>Quantity</th>
+    </tr>
+<% @sale.each do |sale| %>
+    <tr>
+        <td><%= sale.DT %></td>
+        <td><%= sale.ProductID %></td>
+        <td><%= sale.Price %></td>
+        <td><%= sale.Quantity %></td>
+        <td><%= link_to 'Edit', edit_sale_path(sale), class: "btn btn-xs btn-primary"  %></td>
+        <td><%= link_to 'Delete', sale_path(sale), class: "btn btn-xs btn-primary" , method: :delete, data: {confirm: "Are you sure?"} %></td>
+    </tr>
+<% end %>
+</table>
+
+
+
+
+

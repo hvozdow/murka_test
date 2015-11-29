@@ -1,0 +1,12 @@
+<h1>Showing  Rates</h1>
+<p>
+DT: <%= @rate.DT %>
+</p>
+<p>
+ProductID: <%= @rate.ProductID %>
+</p>
+<p>
+Rate: <%= @rate.Rate %>
+</p>
+<%= link_to "Edit this rate", edit_rate_path(@rate) %> |
+<%= link_to "Back to rate listing", rates_path %>
