@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   
   resources :rates
-  resources :sales# GET /posts
-  get '/sales/step', to: 'sales#step', as: 'step'
+  resources :sales
+  resources :pages
+  root 'pages#home'
+  get 'pages/home', to: 'pages#home'
+  get 'pages/about', to: 'pages#about'
 
 
   # The priority is based upon order of creation: first created -> highest priority.

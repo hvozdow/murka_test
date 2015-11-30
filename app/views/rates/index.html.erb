@@ -1,6 +1,6 @@
 <h1>Listing all Rates</h1>
 <p>
-<%= link_to "Create new rate", new_rate_path %>
+<%= link_to "Create new rate", new_rate_path, class: "btn btn-xs btn btn-success"%>
 </p>
 <table>
     <tr>
@@ -10,11 +10,11 @@
     </tr>
 <% @rate.each do |rate| %>
     <tr>
-        <td><%= rate.DT %></td>
+        <td><%= rate.DT %>  </td>
         <td><%= rate.ProductID %></td>
         <td><%= rate.Rate %></td>
         <td><%= link_to 'Edit', edit_rate_path(rate), class: "btn btn-xs btn-primary"  %></td>
-        <td><%= link_to 'Delete', rate_path(rate), class: "btn btn-xs btn-primary" , method: :delete, data: {confirm: "Are you sure?"} %></td>
+        <td><%= link_to 'Delete', rate_path(rate), class: "btn btn-xs btn btn-danger" , method: :delete, data: {confirm: "Are you sure?"} %></td>
     </tr>
 <% end %>
 </table>
